@@ -1,4 +1,4 @@
-package org.carlos.fantasymetals;
+package org.carlos.fantasymetals.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

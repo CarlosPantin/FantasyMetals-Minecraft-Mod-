@@ -1,5 +1,6 @@
 {
   "item.fantasymetals.ruby": "Ruby",
   "block.fantasymetals.ruby_ore": "Ruby Ore",
-  "itemGroup.fantasymetals": "Fantasy Metals"
+  "itemGroup.fantasymetals": "Fantasy Metals",
+  "item.fantasymetals.ruby_sword": "Ruby Sword"
 }

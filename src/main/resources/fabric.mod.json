@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "fantasymetals",
+  "version": "${version}",
+  "name": "FantasyMetals",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fantasymetals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.carlos.fantasymetals.client.FantasymetalsDataGenerator"
+    ],
+    "client": [
+      "org.carlos.fantasymetals.client.FantasymetalsClient"
+    ],
+    "main": [
+      "org.carlos.fantasymetals.Fantasymetals"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

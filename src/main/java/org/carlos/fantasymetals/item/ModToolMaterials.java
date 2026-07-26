@@ -9,7 +9,7 @@ import net.minecraft.registry.tag.TagKey;
 public enum ModToolMaterials implements ToolMaterial {
     RUBY(
             900,        // Durability
-            6.0F,       // Mining speed
+            6.5F,       // Mining speed
             2.5F,       // Attack damage bonus
             18,         // Enchantability
             Ingredient.ofItems(ModItems.RUBY)

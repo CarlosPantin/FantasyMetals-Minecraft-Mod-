@@ -4,6 +4,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.AxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -24,6 +25,13 @@ public class ModItems {
             ModToolMaterials.RUBY,
             new Item.Settings().attributeModifiers(
                     PickaxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 1, -2.8F)
+            )
+    );
+
+    public static final Item RUBY_AXE = new AxeItem(
+            ModToolMaterials.RUBY,
+            new Item.Settings().attributeModifiers(
+                    AxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 2, -3.0F)
             )
     );
 
@@ -50,6 +58,12 @@ public class ModItems {
                 Registries.ITEM,
                 Identifier.of("fantasymetals", "ruby_pickaxe"),
                 RUBY_PICKAXE
+        );
+
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of("fantasymetals", "ruby_axe"),
+                RUBY_AXE
         );
     }
 }

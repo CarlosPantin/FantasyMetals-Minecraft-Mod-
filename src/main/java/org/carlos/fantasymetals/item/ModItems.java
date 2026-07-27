@@ -6,6 +6,7 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ShovelItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -40,6 +41,13 @@ public class ModItems {
             ModToolMaterials.RUBY,
             new Item.Settings().attributeModifiers(
                     ShovelItem.createAttributeModifiers(ModToolMaterials.RUBY, 1.5F, -3.0F)
+            )
+    );
+
+    public static final Item RUBY_HOE = new HoeItem(
+            ModToolMaterials.RUBY,
+            new Item.Settings().attributeModifiers(
+                    HoeItem.createAttributeModifiers(ModToolMaterials.RUBY, 1.5F, -3.0F)
             )
     );
 
@@ -78,6 +86,12 @@ public class ModItems {
                 Registries.ITEM,
                 Identifier.of("fantasymetals", "ruby_shovel"),
                 RUBY_SHOVEL
+        );
+
+        Registry.register(
+                Registries.ITEM,
+                Identifier.of("fantasymetals", "ruby_hoe"),
+                RUBY_HOE
         );
     }
 }
